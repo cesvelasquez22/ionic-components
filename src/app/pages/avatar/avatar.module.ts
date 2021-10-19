@@ -4,10 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ActionSheetPageRoutingModule } from './action-sheet-routing.module';
+import { AvatarPageRoutingModule } from './avatar-routing.module';
 
-import { ActionSheetPage } from './action-sheet.page';
-import {ComponentsModule} from '@shared/components';
+import { AvatarPage } from './avatar.page';
+import { ComponentsModule } from '@shared/components';
 
 @NgModule({
   imports: [
@@ -15,8 +15,8 @@ import {ComponentsModule} from '@shared/components';
     FormsModule,
     IonicModule,
     ComponentsModule,
-    ActionSheetPageRoutingModule
+    AvatarPageRoutingModule
   ],
-  declarations: [ActionSheetPage]
+  declarations: [AvatarPage]
 })
-export class ActionSheetPageModule {}
+export class AvatarPageModule {}
