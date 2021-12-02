@@ -9,6 +9,24 @@ export class DatetimePage implements OnInit {
 
   birthDate = new Date().toISOString();
 
+  customYearValues = [2025, 2020, 2016, 2008, 2004, 2000, 1996];
+  customPickerOptions = {
+    buttons: [
+      {
+        text: 'hola',
+        handler: (event) => {
+          console.log(event);
+        }
+      },
+      {
+        text: 'mundo',
+        handler: () => {
+          console.log('log!');
+        }
+      },
+    ]
+  };
+
   constructor() { }
 
   ngOnInit() {
