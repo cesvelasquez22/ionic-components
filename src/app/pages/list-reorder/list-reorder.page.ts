@@ -9,6 +9,8 @@ export class ListReorderPage implements OnInit {
 
   heroes: string[] = ['Aquaman', 'Superman', 'Batman', 'Wonder Woman', 'Flash'];
 
+  reorderDisable = true;
+
   constructor() { }
 
   ngOnInit() {
