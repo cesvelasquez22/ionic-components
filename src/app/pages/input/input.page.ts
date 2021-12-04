@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-input',
@@ -6,12 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input.page.scss'],
 })
 export class InputPage implements OnInit {
-
   name = 'Cesar Velasquez';
+  usuario = {
+    email: '',
+    password: '',
+  };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  onSubmit(form: NgForm) {
+    console.log(this.usuario);
+    console.log(form);
   }
-
 }
