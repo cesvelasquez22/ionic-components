@@ -28,3 +28,7 @@
 .destructive-md, .destructive-md ion-icon {
   color: red !important;
 }
+
+ion-item {
+  --background: transparent;
+}
