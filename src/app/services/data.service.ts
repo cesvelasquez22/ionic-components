@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ComponentInterface } from '../models/component.interface';
+import { Hero } from '../models/hero.interface';
 import { Album, User } from './data.type';
 
 @Injectable({
@@ -14,6 +15,10 @@ export class DataService {
 
   getMenuOptions() {
     return this.http.get<ComponentInterface[]>('assets/data/menu-options.json');
+  }
+
+  getHeroes() {
+    return this.http.get<Hero[]>('assets/data/superheroes.json');
   }
 
   getUsers() {

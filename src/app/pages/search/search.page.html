@@ -1,6 +1,11 @@
 <ion-header class="ion-no-border">
+  
   <ion-toolbar>
-    <ion-title>Search</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" color="primary"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title color="primary">Search</ion-title>
   </ion-toolbar>
 
   <ion-searchbar placeholder="Buscar album" inputmode="text" [debounce]="250" animated (ionChange)="onSearchChange($event)" ></ion-searchbar>
