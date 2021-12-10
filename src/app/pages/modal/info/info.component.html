@@ -1,11 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Modal Info</ion-title>
+    <ion-title>{{ name }} - {{ country }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
   <ion-button (click)="closeButton()" expand="block">
-    Salir sin argumentos
+    Cerrar modal
+  </ion-button>
+
+  <ion-button (click)="sendToParent()" expand="block">
+    Enviar al padre
   </ion-button>
 </ion-content>

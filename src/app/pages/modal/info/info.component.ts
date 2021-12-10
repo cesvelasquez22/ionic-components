@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
 @Component({
@@ -8,12 +8,22 @@ import { ModalController } from '@ionic/angular';
 })
 export class InfoComponent implements OnInit {
 
+  @Input() name: string;
+  @Input() country: string;
+
   constructor(private modalController: ModalController) { }
 
   ngOnInit() {}
 
   closeButton() {
     this.modalController.dismiss();
+  }
+
+  sendToParent() {
+    this.modalController.dismiss({
+      name: 'Pablo',
+      country: 'Inglaterra',
+    });
   }
 
 }
