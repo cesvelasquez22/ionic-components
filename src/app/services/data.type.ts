@@ -21,3 +21,9 @@ export interface User {
     bs: string;
   };
 }
+
+export interface Album {
+  userId: number;
+  id: number;
+  title: string;
+}
